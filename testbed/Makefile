@@ -1,12 +1,12 @@
 ########################################################################
-####################### Makefile engine.dll ##############################
+####################### Makefile testbed ##############################
 ########################################################################
 
 # Compiler settings - Can be customized.
 CC = gcc
 CXXFLAGS = -std=c11 -g -Wall -Werror -Wvarargs 
-IFLAGS = -I../engine/src/include -I$(VK_SDK_PATH)/Include
-LDFLAGS = -luser32 -lvulkan-1 -lengine -lm -L$(VK_SDK_PATH)/LIB -L../bin
+IFLAGS = -I../engine/src/include -I$(VK_SDK_PATH)/Include/
+LDFLAGS = -lengine -L../bin/
 DEFINES = -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
 
 # Makefile settings - Can be customized.

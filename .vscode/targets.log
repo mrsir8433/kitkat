@@ -1,0 +1,975 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+make.exe -C engine all
+ 
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+# make.exe[1]: Entering directory 'c:/Users/91910/Documents/c/kitkat/engine'
+ 
+src/logger.c: line 3: syntax error near unexpected token `('
+src/logger.c: line 3: `b8 log_init()'
+
+
+# Make data base, printed on Sat Jul 16 10:55:12 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = WT_SESSION::WT_PROFILE_ID
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 22)
+OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
+# makefile (from 'Makefile', line 21)
+SRC = $(shell find $(SRCDIR) -name *$(EXT))
+# makefile
+MAKEFLAGS = wRrqp
+# makefile (from 'Makefile', line 8)
+IFLAGS = -I$(VK_SDK_PATH)/Include/
+# automat 
+ic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/91910/Documents/c/kitkat/engine
+# makefile
+SHELL = C:/Program Files/Git/usr/bin/sh.exe
+# environment
+CONFIG_SITE = C:/Program Files/Git/etc/config.site
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1 = 1
+# environment
+_ = C:/Program Files/Microsoft VS Code/Code.exe
+# environment
+ONEDRIVE = C:\Users\91910\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile (from 'dep/platform.d', line 1)
+MAKEFILE_LIST :=  Makefile dep/logger.d dep/platform.d
+# environment
+TMP = C:\Users\91910\AppData\Local\Temp
+# makefile (from 'Makefile', line 7)
+CXXFLAGS = -std=c11 -g -shared -fPIC -Wall -Werror -Wvarargs 
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+INFOPATH = C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+MSYSTEM_CHOST = x86_64-w64-mingw32
+# environment
+VSCODE_CWD = C:\Users\91910\Documents\c\kitkat
+# environment
+PATH = C:\Users\91910\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\91910\bin;C:\VulkanSDK\Bin;C:\cuda\v11.7\bin;C:\cuda\v11.7\libnvvp;C:\TDM-GCC-64\bin;C:\Program Files\Go\bin;C:\Program Files\CMake\bin;C:\windows\system32;C:\Program Files\Microsoft VS Code\bin;C:\Python310;C:\Python310\Scripts;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\opencv\build\install\x64\mingw\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\91910\softwares\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\91910\AppData\Local\Microsoft\WindowsApps;C:\Users\91910\go\bin;C:\Users\91910\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+# environment
+ONLINESERVICES = Online Services
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# makefile (from 'Makefile', line 23)
+DEP = $(OBJ:$(OBJDIR)/%.o=$(DEPDIR)/%.d)
+# environment
+LC_ALL = C
+# environment
+CHOCOLATEYLASTPATHUPDATE = 133016395437940220
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\91910
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+MSYSTEM_CARCH = x86_64
+# environment
+EXEPATH = C:\Program Files\Git\bin
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+GOPATH = C:\Users\91910\go
+# environment
+PLINK_PROTOCOL = ssh
+# environment
+MSYSTEM_PREFIX = C:/Program Files/Git/mingw64
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 9)
+LDFLAGS = -lvulkan-1 -lSDL2 -L$(VK_SDK_PATH)/LIB
+# environment
+ORIGINAL_TEMP = C:/Users/91910/AppData/Local/Temp
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# environment
+VK_SDK_PATH = C:\VulkanSDK
+# makefile (from 'Makefile', line 15)
+SRCDIR = ./src
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = needs-to-be-defined
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18912_DAFVEGVEWJMPTRTA
+# environment
+ORIGINAL_PATH = C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\91910\bin;C:\VulkanSDK\Bin;C:\cuda\v11.7\bin;C:\cuda\v11.7\libnvvp;C:\TDM-GCC-64\bin;C:\Program Files\Go\bin;C:\Program Files\CMake\bin;C:\windows\system32;C:\Program Files\Microsoft VS Code\bin;C:\Python310;C:\Python310\Scripts;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\opencv\build\install\x64\mingw\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\91910\softwares\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\91910\AppData\Local\Microsoft\WindowsApps;C:\Users\91910\go\bin;C:\Users\91910\AppData\Roaming\npm
+# environment
+COMPUTERNAME = MRSIR
+# environment
+PWD = C:/Users/91910/Documents/c/kitkat
+# environment
+ASSUME_NO_MOVING_GC_UNSAFE_RISK_IT_WITH = go1.18
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+PKG_CONFIG_PATH = C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+WT_SESSION = a8de35dc-9fd5-42dd-940a-e3db50173d9f
+# environment
+USERNAME = 91910
+# environment
+PUBLIC = C:\Users\Public
+# environment
+MANPATH = C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = C:\Users\91910
+# environment
+VSCODE_CLI = 1
+# makefile (from 'Makefile', line 10)
+DEFINES = -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\91910\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Makefile', line 26)
+DELOBJ = $(OBJ)
+# environment
+COMMONPRO 
+GRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\MRSIR
+# environment
+REGIONCODE = APJ
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = MRSIR
+# environment
+HOSTNAME = mrsir
+# environment
+MAKELEVEL := 1
+# environment
+SSH_ASKPASS = C:/Program Files/Git/mingw64/bin/git-askpass.exe
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 13)
+APPNAME = engine.dll
+# environment
+SHLVL = 2
+# makefile (from 'Makefile', line 18)
+BINDIR = ../bin
+# makefile (from 'Makefile', line 6)
+CC = gcc
+# environment
+ACLOCAL_PATH = C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
+# default
+MAKE_VERSION := 3.82.90
+# environment
+MINGW_CHOST = x86_64-w64-mingw32
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 27)
+MKDIR_P = mkdir -p
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\91910\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# environment
+OLDPWD = C:/Users/91910/Documents
+# environment
+AMDRMSDKPATH = C:\Program Files\AMD\RyzenMasterSDK\
+# default
+.VARIABLES := 
+# environment
+TMPDIR = C:\Users\91910\AppData\Local\Temp
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\550608ea6833fb253414b69ddff6569a-1.69.1-main-sock
+# makefile (from 'Makefile', line 14)
+EXT = .c
+# makefile (from 'Makefile', line 25)
+RM = rm
+# environment
+HOMEPATH = \Users\91910
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -wRrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+ORIGINAL_TMP = C:/Users/91910/A 
+ppData/Local/Temp
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# environment
+MINGW_PREFIX = C:/Program Files/Git/mingw64
+# environment
+PLATFORMCODE = KV
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\91910\AppData\Roaming
+# environment
+TEMP = C:\Users\91910\AppData\Local\Temp
+# environment
+WT_PROFILE_ID = {2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+MSYSTEM = MINGW64
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 17)
+DEPDIR = ./dep
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 16)
+OBJDIR = ./obj
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# automatic
+^F = $(notdir $^)
+# environment
+CUDA_PATH = C:\cuda\v11.7
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+PROCESSOR_REVISION = 6001
+# default
+.RECIPEPREFIX := 
+# environment
+VULKAN_SDK = C:\VulkanSDK
+# environment
+CUDA_PATH_V11_7 = C:\cuda\v11.7
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 18912
+# environment
+MINGW_PACKAGE_PREFIX = mingw-w64-x86_64
+# environment
+USERDOMAIN_ROAMINGPROFILE = MRSIR
+# variable set hash-table stats:
+# Load=144/1024=14%, Rehash=0, Collisions=25/224=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# C:\Program Files\Git\usr\bin (key C:/Program Files/Git/usr/bin, mtime 1656701318): 306 files, no impossibilities so far.
+# . (key c:/Users/91910 
+/Documents/c/kitkat/engine, mtime 1657700195): 6 files, no impossibilities.
+# C:\Program Files\Git\usr\local\bin: could not be stat'd.
+# src (key c:/Users/91910/Documents/c/kitkat/engine/src, mtime 1657862388): No files, no impossibilities so far.
+# C:\Users\91910\bin: could not be stat'd.
+# C:\Program Files\Git\mingw64\bin (key C:/Program Files/Git/mingw64/bin, mtime 1656701318): 143 files, no impossibilities.
+
+# 455 files, no impossibilities in 6 directories.
+
+# Implicit Rules
+
+dep/%.d: src/%.c
+#  recipe to execute (from 'Makefile', line 50):
+	@$(MKDIR_P) $(dir $@)
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=%.o) >$@
+
+obj/%.o: src/%.c
+#  recipe to execute (from 'Makefile', line 58):
+	@$(MKDIR_P) $(dir $@)
+	@$(CC) $(CXXFLAGS) -o $@ -c $< $(IFLAGS) $(DEFINES)
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+src/include/defines.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/include/platform.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: ../bin/engine.dll
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+
+.PHONY: all run clean fullclean cleandep cleanw cleandepw
+#  Implicit rule search has not been done.
+#  Modification time never 
+ checked.
+#  File has not been updated.
+
+# Not a target:
+src/logger.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 02:09:46
+#  File has been updated.
+#  Successfully updated.
+
+../bin/engine.dll: obj/logger.o obj/platform.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-16 01:06:34
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/9=0%
+#  recipe to execute (from 'Makefile', line 44):
+	@echo "Building engine.dll"
+	@$(MKDIR_P) $(dir $@)
+	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+# Not a target:
+src/platform.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 00:33:29
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-15 23:06:35
+#  File has been updated.
+#  Successfully updated.
+
+dep/logger.d: src/logger.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'logger'
+#  Modification time never checked.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := dep/logger.d
+# automatic
+# % := 
+# automatic
+# * := logger
+# automatic
+# + := src/logger.c
+# automatic
+# | := 
+# automatic
+# < := src/logger.c
+# automatic
+# ^ := src/logger.c
+# automatic
+# ? := src/logger.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/21=5%
+#  recipe to execute (from 'Makefile', line 50):
+	@$(MKDIR_P) $(dir $@)
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=%.o) >$@
+
+cleanw:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+dep/platform.d: src/platform.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'platform'
+#  Last modified 2022-07-16 00:33:37
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 50):
+	@$(MKDIR_P) $(dir $@)
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=%.o) >$@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleandep:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 74):
+	$(RM)  -f $(DEP)
+
+cleandepw:
+#  Phony target (prerequisite of .PHONY).
+#  Impl 
+icit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+run: all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 39):
+	$(BINDIR)/$(APPNAME)
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 64):
+	@echo "Cleaning..."
+	@$(RM) -f $(DELOBJ) $(DEP) $(BINDIR)/$(APPNAME)
+
+dep/logger.o: src/logger.c src/include/logger.h src/include/defines.h src/include/platform.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fullclean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 68):
+	@echo "Cleaning full..."
+	@$(RM) -f $(DELOBJ) $(DEP) $(BINDIR)/$(APPNAME)
+	@$(RM) -r ./dep ./obj
+
+dep/platform.o: src/platform.c src/include/platform.h src/include/defines.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/logger.o: src/logger.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'logger'
+#  Last modified 2022-07-16 01:06:34
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/logger.o
+# automatic
+# % := 
+# automatic
+# 
+ * := logger
+# automatic
+# + := src/logger.c
+# automatic
+# | := 
+# automatic
+# < := src/logger.c
+# automatic
+# ^ := src/logger.c
+# automatic
+# ? := src/logger.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/20=10%
+#  recipe to execute (from 'Makefile', line 58):
+	@$(MKDIR_P) $(dir $@)
+	@$(CC) $(CXXFLAGS) -o $@ -c $< $(IFLAGS) $(DEFINES)
+
+# Not a target:
+src/include/logger.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/platform.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=23/1024=2%, Rehash=0, Collisions=0/69=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 464 / storage = 6479 B / avg = 13 B
+# current buf: size = 8174 B / used = 6479 B / count = 464 / avg = 13 B
+
+# strcache performance: lookups = 520 / hit rate = 
+ 10%
+# hash-table stats:
+# Load=464/8192=6%, Rehash=0, Collisions=23/520=4%
+# Finished Make data base on Sat Jul 16 10:55:12 2022
+
+# make.exe[1]: Leaving directory 'c:/Users/91910/Documents/c/kitkat/engine'
+ 
+Makefile:7: recipe for target 'engine' failed
+ 
+make.exe: *** [engine] Error 1
+
+
+# Make data base, printed on Sat Jul 16 10:55:12 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = WT_SESSION::WT_PROFILE_ID
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 1)
+TOPTARGETS := all clean
+# makefile
+MAKEFLAGS = Rrqp
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/91910/Documents/c/kitkat
+# makefile
+SHELL = C:/Program Files/Git/usr/bin/sh.exe
+# environment
+CONFIG_SITE = C:/Program Files/Git/etc/config.site
+# environment
+WINDIR = C:\WINDOWS
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1 = 1
+# environment
+_ = C:/Program Files/Microsoft VS Code/Code.exe
+# environment
+ONEDRIVE = C:\Users\91910\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+TMP = C:\Users\91910\AppData\Local\Temp
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+INFOPATH = C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+MSYSTEM_CHOST = x86_64-w64-mingw32
+# environment
+VSCODE_CWD = C:\Users\91910\Documents\c\kitkat
+# environment
+PATH = C:\Users\91910\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\91910\bin;C:\VulkanSDK\Bin;C:\cuda\v11.7\bin;C:\cuda\v11.7\libnvvp;C:\TDM-GCC-64\bin;C:\Program Files\Go\bin;C:\Program Files\CMake\bin;C:\windows\system32;C:\Program Files\Microsoft VS Code\bin;C:\Python310;C:\Python310\Scripts;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\opencv\build\install\x64\mingw\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\91910\softwares\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\91910\AppData\Local\Microsoft\WindowsApps;C:\Users\91910\go\bin;C:\Users\91910\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+# environment
+ONLINESERVICES = Online Services
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+LC_ALL = C
+# environment
+CHOCOLATEYLASTPATHUPDATE = 133016395437940220
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\91910
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+MSYSTEM_CARCH = x86_64
+# environment
+EXEPATH = C:\Program Files\Git\bin
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+GOPATH = C:\Users\91910\go
+# environment
+PLINK_PROTOCOL = ssh
+# environment
+MSYSTEM_PREFIX = C:/Program Files/Git/mingw64
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+ORIGINAL_TEMP = C:/Users/91910/AppData/Local/Temp
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# environment
+VK_SDK_PATH = C:\VulkanSDK
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = needs-to-be-defined
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18912_DAFVEGVEWJMPTRTA
+# environment
+ORIGINAL_PATH = C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\91910\bin;C:\VulkanSDK\Bin;C:\cuda\v11.7\bin;C:\cuda\v11.7\libnvvp;C:\TDM-GCC-64\bin;C:\Program Files\Go\bin;C:\Program Files\CMake\bin;C:\windows\system32;C:\Program Files\Microsoft VS Code\bin;C:\Python310;C:\Python310\Scripts;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\opencv\build\install\x64\mingw\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Users\91910\softwares\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Users\91910\AppData\Local\Microsoft\WindowsApps;C:\Users\91910\go\bin;C:\Users\91910\AppData\Roaming\npm
+# environment
+COMPUTERNAME = MRSIR
+# environment
+PWD = C:/Users/91910/Documents/c/kitkat
+# environment
+ASSUME_NO_MOVING_GC_UNSAFE_RISK_IT_WITH = go1.18
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+PKG_CONFIG_PATH = C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+WT_SESSION = a8de35dc-9fd5-42dd-940a-e3db50173d9f
+# environment
+USERNAME = 91910
+# environment
+PUBLIC = C:\Users\Public
+# environment
+MANPATH = C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = C:\Users\91910
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\91910\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\MRSIR
+# environment
+REGIONCODE = APJ
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = MRSIR
+# environment
+HOSTNAME = mrsir
+# environment
+MAKELEVEL := 0
+# environment
+SSH_ASKPASS = C:/Program Files/Git/mingw64/bin/git-askpass.exe
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+ACLOCAL_PATH = C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
+# default
+MAKE_VERSION := 3.82.90
+# environment
+MINGW_CHOST = x86_64-w64-mingw32
+# makefile
+.DEFAULT_GOAL := all
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+LOCALAPPDATA = C:\Users\91910\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# environment
+OLDPWD = C:/Users/91910/Documents
+# environment
+AMDRMSDKPATH = C:\Program Files\AMD\RyzenMasterSDK\
+# default
+.VARIABLES := 
+# environment
+TMPDIR = C:\Us 
+ers\91910\AppData\Local\Temp
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\550608ea6833fb253414b69ddff6569a-1.69.1-main-sock
+# environment
+HOMEPATH = \Users\91910
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+ORIGINAL_TMP = C:/Users/91910/AppData/Local/Temp
+# environment
+SYSTEMROOT = C:\WINDOWS
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# environment
+MINGW_PREFIX = C:/Program Files/Git/mingw64
+# environment
+PLATFORMCODE = KV
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\91910\AppData\Roaming
+# environment
+TEMP = C:\Users\91910\AppData\Local\Temp
+# environment
+WT_PROFILE_ID = {2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+MSYSTEM = MINGW64
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# automatic
+^F = $(notdir $^)
+# environment
+CUDA_PATH = C:\cuda\v11.7
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+PROCESSOR_REVISION = 6001
+# default
+.RECIPEPREFIX := 
+# environment
+VULKAN_SDK = C:\VulkanSDK
+# environment
+CUDA_PATH_V11_7 = C:\cuda\v11.7
+# makefile (from 'Makefile', line 3)
+SUBDIRS := engine testbed
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL 
+ = 23
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 18912
+# environment
+MINGW_PACKAGE_PREFIX = mingw-w64-x86_64
+# environment
+USERDOMAIN_ROAMINGPROFILE = MRSIR
+# variable set hash-table stats:
+# Load=129/1024=13%, Rehash=0, Collisions=14/159=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# C:\Program Files\Git\usr\bin (key C:/Program Files/Git/usr/bin, mtime 1656701318): 306 files, no impossibilities so far.
+# . (key c:/Users/91910/Documents/c/kitkat, mtime 1657700272): 11 files, no impossibilities.
+# C:\Program Files\Git\usr\local\bin: could not be stat'd.
+# C:\Users\91910\bin: could not be stat'd.
+# C:\Program Files\Git\mingw64\bin (key C:/Program Files/Git/mingw64/bin, mtime 1656701318): 143 files, no impossibilities.
+
+# 460 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all: engine testbed
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+.PHONY: all clean engine testbed run
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-13 1 
+3:52:06
+#  File has been updated.
+#  Successfully updated.
+
+testbed:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 7):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	./bin/testbed.exe
+
+clean: engine testbed
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+engine:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := engine
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  recipe to execute (from 'Makefile', line 7):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
+
+# files hash-table stats:
+# Load=9/1024=1%, Rehash=0, Collisions=0/31=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 447 / storage = 6249 B / avg = 13 B
+# current buf: size = 8174 B / used = 6249 B / count = 447 / avg = 13 B
+
+# strcache performance: lookups = 490 / hit rate = 8%
+# hash-table stats:
+# Load=447/8192=5%, Rehash=0, Collisions=24/490=5%
+# Finished Make data base on Sat Jul 16 10:55:12 2022
+
+ 

@@ -1,0 +1,16 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\91910\\Documents\\c\\kitkat\\bin",
+            "binaryPath": "c:\\Users\\91910\\Documents\\c\\kitkat\\bin\\testbed.exe",
+            "binaryArgs": []
+        }
+    ],
+    "files.associations": {
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "sdl.h": "c",
+        "sdl_syswm.h": "c",
+        "winapifamily.h": "c"
+    }
+}

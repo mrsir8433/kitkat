@@ -4,9 +4,9 @@
 
 # Compiler settings - Can be customized.
 CC = gcc
-CXXFLAGS = -std=c11 -g -shared -Wall -Werror -Wvarargs 
-IFLAGS = -I$(VK_SDK_PATH)/Include
-LDFLAGS = -luser32 -lvulkan-1 -lm -L$(VK_SDK_PATH)/LIB
+CXXFLAGS = -std=c11 -g -shared -fPIC -Wall -Werror -Wvarargs 
+IFLAGS = -I$(VK_SDK_PATH)/Include/
+LDFLAGS = -lvulkan-1 -lSDL2 -L$(VK_SDK_PATH)/LIB
 DEFINES = -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
 
 # Makefile settings - Can be customized.

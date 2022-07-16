@@ -1,5 +1,7 @@
 #pragma once
 
+#include <assert.h>
+
 // unsigned int types
 typedef unsigned char u8;
 typedef unsigned short u16;
@@ -20,7 +22,7 @@ typedef double f64;
 typedef int b32;
 typedef char b8;
 
-#define STATIC_ASSERT _Static_assert
+#define STATIC_ASSERT static_assert
 
 STATIC_ASSERT(sizeof(u8) == 1, "u8 not right size");
 STATIC_ASSERT(sizeof(u16) == 2, "u16 not right size");
@@ -41,11 +43,13 @@ STATIC_ASSERT(sizeof(b8) == 1, "b8 not right size");
 #define TRUE 1
 #define FALSE 0
 
-#ifdef KEXPORT
-// EXPORTS
-#ifdef _MSC_VER
 #define KAPI __declspec(dllexport)
-#else
-#define KAPI __attribute__((visibility("default")))
-#endif
-#endif
+
+// #ifdef KEXPORT
+// // EXPORTS
+// #ifdef _MSC_VER
+// #define KAPI __declspec(dllexport)
+// #else
+// #define KAPI __attribute__((visibility("default")))
+// #endif
+// #endif

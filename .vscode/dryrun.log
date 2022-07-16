@@ -1,0 +1,6 @@
+make.exe ../bin/engine.dll --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/91910/Documents/c/kitkat'
+make.exe: Leaving directory 'c:/Users/91910/Documents/c/kitkat'
+ 
+make.exe: *** No rule to make target '../bin/engine.dll'.
+

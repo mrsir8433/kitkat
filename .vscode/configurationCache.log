@@ -1,0 +1,1 @@
+{"buildTargets":["../bin/engine.dll",".PHONY","all","clean","cleandep","cleandepw","cleanw","dep/logger.d","dep/logger.o","dep/platform.d","dep/platform.o","engine","fullclean","obj/logger.o","run","testbed"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
