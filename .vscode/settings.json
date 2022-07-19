@@ -11,6 +11,11 @@
         "stdio.h": "c",
         "sdl.h": "c",
         "sdl_syswm.h": "c",
-        "winapifamily.h": "c"
-    }
+        "winapifamily.h": "c",
+        "platform.h": "c",
+        "sketch.h": "c"
+    },
+    "C_Cpp.codeAnalysis.clangTidy.checks.disabled": [
+        "clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling"
+    ]
 }

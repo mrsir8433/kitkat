@@ -1,6 +1,44 @@
-make.exe ../bin/engine.dll --dry-run --always-make --keep-going --print-directory
-make.exe: Entering directory 'c:/Users/91910/Documents/c/kitkat'
-make.exe: Leaving directory 'c:/Users/91910/Documents/c/kitkat'
+make.exe all --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/c/Users/91910/Documents/c/kitkat'
+make -C engine all
  
-make.exe: *** No rule to make target '../bin/engine.dll'.
+make[1]: Entering directory '/c/Users/91910/Documents/c/kitkat/engine'
+ 
+/bin/sh: line 1: clang: command not found
 
+/bin/sh: line 1: clang: command not found
+
+/bin/sh: line 1: clang: command not found
+
+mkdir -p obj/
+clang -std=c11 -g -Wall -Wextra -o obj/app.o -c src/app.c -IC:/VulkanSDK/Include/ -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
+ 
+mkdir -p obj/
+clang -std=c11 -g -Wall -Wextra -o obj/logger.o -c src/logger.c -IC:/VulkanSDK/Include/ -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
+mkdir -p obj/
+clang -std=c11 -g -Wall -Wextra -o obj/platform.o -c src/platform.c -IC:/VulkanSDK/Include/ -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
+echo "Building engine.dll"
+mkdir -p ../bin/
+clang -std=c11 -g -Wall -Wextra -shared -o ../bin/engine.dll obj/app.o obj/logger.o obj/platform.o -lvulkan-1 -lSDL2 -LC:/VulkanSDK/LIB
+make[1]: Leaving directory '/c/Users/91910/Documents/c/kitkat/engine'
+ 
+make -C testbed all
+ 
+make[1]: Entering directory '/c/Users/91910/Documents/c/kitkat/testbed'
+ 
+/bin/sh: line 1: clang: command not found
+
+/bin/sh: line 1: clang: command not found
+
+mkdir -p obj/
+clang -std=c11 -g -Wall -Wextra -o obj/entry.o -c src/entry.c -IC:/VulkanSDK/Include/ -I../engine/src/include -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
+ 
+mkdir -p obj/
+clang -std=c11 -g -Wall -Wextra -o obj/sketch1.o -c src/sketch1.c -IC:/VulkanSDK/Include/ -I../engine/src/include -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
+echo "Building testbed"
+mkdir -p ../bin/
+clang -std=c11 -g -Wall -Wextra -o ../bin/testbed.exe obj/entry.o obj/sketch1.o -lengine -L../bin/
+make[1]: Leaving directory '/c/Users/91910/Documents/c/kitkat/testbed'
+ 
+make: Leaving directory '/c/Users/91910/Documents/c/kitkat'
+ 

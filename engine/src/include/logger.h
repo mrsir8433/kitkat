@@ -1,9 +1,5 @@
 #pragma once
 
-#include <stdio.h>
-#include <stdarg.h>
-#include <string.h>
-
 #include "defines.h"
 #include "platform.h"
 
@@ -20,20 +16,19 @@
 #define LOG_TRACE_ENABLED 0
 #endif
 
-typedef enum log_level
-{
-    LOG_LEVEL_FATAL = 0,
-    LOG_LEVEL_ERROR = 1,
-    LOG_LEVEL_WARN = 2,
-    LOG_LEVEL_INFO = 3,
-    LOG_LEVEL_DEBUG = 4,
-    LOG_LEVEL_TRACE = 5
+typedef enum log_level {
+  LOG_LEVEL_FATAL = 0,
+  LOG_LEVEL_ERROR = 1,
+  LOG_LEVEL_WARN = 2,
+  LOG_LEVEL_INFO = 3,
+  LOG_LEVEL_DEBUG = 4,
+  LOG_LEVEL_TRACE = 5
 } LogLevel;
 
 b8 log_init();
 void log_quit();
 
-KAPI void log_output(LogLevel level, const char *format, ...);
+KAPI void log_output(LogLevel level, const char* format, ...);
 
 #define KFATAL(message, ...) log_output(LOG_LEVEL_FATAL, message, ##__VA_ARGS__)
 #define KERROR(message, ...) log_output(LOG_LEVEL_ERROR, message, ##__VA_ARGS__)
@@ -65,44 +60,36 @@ KAPI void log_output(LogLevel level, const char *format, ...);
 #ifdef KASSERT_ENABLED
 #define debug_break() __builtin_trap()
 
-KAPI void assert_fail(const char *expr, const char *message, const char *file, i32 line);
+KAPI void assert_fail(const char* expr, const char* message, const char* file,
+                      i32 line);
 
-#define KASSERT(expr)                                   \
-    {                                                   \
-        if (expr)                                       \
-        {                                               \
-        }                                               \
-        else                                            \
-        {                                               \
-            assert_fail(#expr, "", __FILE__, __LINE__); \
-            debug_break();                              \
-        }                                               \
-    }
+#define KASSERT(expr)                             \
+  {                                               \
+    if (expr) {                                   \
+    } else {                                      \
+      assert_fail(#expr, "", __FILE__, __LINE__); \
+      debug_break();                              \
+    }                                             \
+  }
 
-#define KASSERT_MSG(expr, msg)                           \
-    {                                                    \
-        if (expr)                                        \
-        {                                                \
-        }                                                \
-        else                                             \
-        {                                                \
-            assert_fail(#expr, msg, __FILE__, __LINE__); \
-            debug_break();                               \
-        }                                                \
-    }
+#define KASSERT_MSG(expr, msg)                     \
+  {                                                \
+    if (expr) {                                    \
+    } else {                                       \
+      assert_fail(#expr, msg, __FILE__, __LINE__); \
+      debug_break();                               \
+    }                                              \
+  }
 
 #ifdef _DEBUG
-#define KASSERT_DBG(expr)                               \
-    {                                                   \
-        if (expr)                                       \
-        {                                               \
-        }                                               \
-        else                                            \
-        {                                               \
-            assert_fail(#expr, "", __FILE__, __LINE__); \
-            debug_break();                              \
-        }                                               \
-    }
+#define KASSERT_DBG(expr)                         \
+  {                                               \
+    if (expr) {                                   \
+    } else {                                      \
+      assert_fail(#expr, "", __FILE__, __LINE__); \
+      debug_break();                              \
+    }                                             \
+  }
 #else
 #define KASSERT_DBG(expr)
 #endif

@@ -43,13 +43,22 @@ STATIC_ASSERT(sizeof(b8) == 1, "b8 not right size");
 #define TRUE 1
 #define FALSE 0
 
-#define KAPI __declspec(dllexport)
+#define NULL 0
 
-// #ifdef KEXPORT
-// // EXPORTS
-// #ifdef _MSC_VER
-// #define KAPI __declspec(dllexport)
-// #else
-// #define KAPI __attribute__((visibility("default")))
-// #endif
-// #endif
+#define SDL_MAIN_HANDLED
+
+#ifdef KEXPORT
+#ifdef _MSC_VER
+#define KAPI __declspec(dllexport)
+#else
+#define KAPI __attribute__((visibility("default")))
+#endif  // MSC_VER
+
+#else
+#ifdef _MSC_VER
+#define KAPI __declspec(dllimport)
+#else
+#define KAPI
+#endif  //_MSC_VER
+
+#endif  // KEXPORT

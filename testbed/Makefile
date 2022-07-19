@@ -3,9 +3,9 @@
 ########################################################################
 
 # Compiler settings - Can be customized.
-CC = gcc
-CXXFLAGS = -std=c11 -g -Wall -Werror -Wvarargs 
-IFLAGS = -I../engine/src/include -I$(VK_SDK_PATH)/Include/
+CC = clang
+CXXFLAGS = -std=c11 -g -Wall -Wextra
+IFLAGS = -I$(VK_SDK_PATH)/Include/ -I../engine/src/include
 LDFLAGS = -lengine -L../bin/
 DEFINES = -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
 
@@ -48,7 +48,7 @@ $(BINDIR)/$(APPNAME): $(OBJ)
 # Creates the dependecy rules
 $(DEPDIR)/%.d: $(SRCDIR)/%$(EXT)
 	@$(MKDIR_P) $(dir $@)
-	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=%.o) >$@
+	@$(CPP) $(CFLAGS) $(IFLAGS) $< -MM -MT $(@:%.d=%.o) >$@
 
 # Includes all .h files
 -include $(DEP)

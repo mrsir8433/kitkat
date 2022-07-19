@@ -3,8 +3,9 @@
 ########################################################################
 
 # Compiler settings - Can be customized.
-CC = gcc
-CXXFLAGS = -std=c11 -g -shared -fPIC -Wall -Werror -Wvarargs 
+CC = clang
+SHARED = -shared
+CXXFLAGS = -std=c11 -g -Wall -Wextra
 IFLAGS = -I$(VK_SDK_PATH)/Include/
 LDFLAGS = -lvulkan-1 -lSDL2 -L$(VK_SDK_PATH)/LIB
 DEFINES = -D_DEBUG -DKEXPORT -D_CRT_SECURE_NO_WARNINGS
@@ -43,12 +44,12 @@ run: all
 $(BINDIR)/$(APPNAME): $(OBJ)
 	@echo "Building engine.dll"
 	@$(MKDIR_P) $(dir $@)
-	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CC) $(CXXFLAGS) $(SHARED) -o $@ $^ $(LDFLAGS)
 
 # Creates the dependecy rules
 $(DEPDIR)/%.d: $(SRCDIR)/%$(EXT)
 	@$(MKDIR_P) $(dir $@)
-	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=%.o) >$@
+	@$(CPP) $(CFLAGS) $(IFLAGS) $< -MM -MT $(@:%.d=%.o) >$@
 
 # Includes all .h files
 -include $(DEP)
@@ -56,7 +57,7 @@ $(DEPDIR)/%.d: $(SRCDIR)/%$(EXT)
 # Building rule for .o files and its .c/.cpp in combination with all .h
 $(OBJDIR)/%.o: $(SRCDIR)/%$(EXT)
 	@$(MKDIR_P) $(dir $@)
-	@$(CC) $(CXXFLAGS) -o $@ -c $< $(IFLAGS) $(DEFINES)
+	$(CC) $(CXXFLAGS) -o $@ -c $< $(IFLAGS) $(DEFINES)
 
 ################### Cleaning rules for Unix-based OS ###################
 # Cleans complete project
